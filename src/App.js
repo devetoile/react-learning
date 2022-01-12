@@ -1,20 +1,17 @@
-import React, { Fragment } from "react";
-
+import React from "react";
+import "./App.scss";
 function App() {
   const name = "react";
-
   return (
-    <div
-      style={{
-        backgroundColor: "blue",
-        color: "red",
-        fontSize: "48px",
-        fontWeight: "bold",
-        padding: 16,
-      }}
-    >
-      {name === "react" && <h1>리액트입니1다</h1>}
-    </div>
+    <>
+      {/* 주석  */}
+      <div className="react">
+        <div className="react-div">
+          {name === "react" && <h1>리액트입니다</h1>}
+          <input />
+        </div>
+      </div>
+    </>
   );
 }
 
